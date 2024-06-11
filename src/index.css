@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: aliceblue;
+  background-color: #f0f0f0; /* Set your desired background color */
+  background-image: url("../public/bg3.jpg"); /* Optional background image */
+  background-repeat: repeat; /* Adjust background image repeat behavior */
+  background-size: cover; /* Adjust background image size */
+  background-position: center; /* Adjust background image position */
+}
