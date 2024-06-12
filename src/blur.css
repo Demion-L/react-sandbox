@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.blur-10 {
+  backdrop-filter: blur(10px); /* Your desired blur effect */
+}
+
+.blur-20 {
+  backdrop-filter: blur(20px); /* Your desired blur effect */
+}
+
+.blur-30 {
+  backdrop-filter: blur(30px); /* Your desired blur effect */
+}
