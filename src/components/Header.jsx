@@ -1,4 +1,4 @@
-const curentTime = new Date();
+import Clock from "../ui/Clock";
 
 const Header = () => {
   return (
@@ -17,9 +17,8 @@ const Header = () => {
           Alatyr Project
         </div>
         <div className='border h-full border-stone-400 rounded p-2'>
-          <span className='text-gray-400'>Current time:</span>{" "}
           <span className='text-gray-100 font-bold'>
-            {curentTime.toLocaleTimeString()}
+            <Clock />
           </span>
         </div>
       </div>
