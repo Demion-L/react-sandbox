@@ -5,6 +5,10 @@ import Button from "../ui/Button";
 import Asaid from "./Asaid/Asaid";
 
 const Main = () => {
+  function handleClick(type) {
+    console.log("type: ", type);
+  }
+
   return (
     <main className='grid grid-cols-6 gap-4 h-fit'>
       <Asaid />
@@ -13,7 +17,11 @@ const Main = () => {
         {ways.map((way) => (
           <DataList {...way} />
         ))}
-        <Button />
+        <div className='flex'>
+          <Button onClick={() => handleClick("way")}>Click me 1</Button>
+          <Button onClick={() => handleClick("easy")}>Click me 2</Button>
+          <Button onClick={() => handleClick("hard")}>Click me 3</Button>
+        </div>
       </section>
     </main>
   );
