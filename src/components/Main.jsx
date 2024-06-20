@@ -1,12 +1,14 @@
-import React from "react";
-import DataList from "./DataList";
-import { ways } from "../data";
+import React, { useState } from "react";
+import { ways, differences } from "../data";
 import Button from "../ui/Button";
 import Asaid from "./Asaid/Asaid";
+import Accordion from "../ui/Accordion/Accordion";
 
 const Main = () => {
+  const [contentType, setContentType] = useState(null);
+
   function handleClick(type) {
-    console.log("type: ", type);
+    setContentType(type);
   }
 
   return (
@@ -14,14 +16,15 @@ const Main = () => {
       <Asaid />
       <section className='col-start-5 col-end-7'>
         <h1 className='text-xl font-bold w-32 mx-auto my-6'>Hello world</h1>
-        {ways.map((way) => (
-          <DataList {...way} />
-        ))}
+        <Accordion items={ways} />
         <div className='flex'>
           <Button onClick={() => handleClick("way")}>Click me 1</Button>
           <Button onClick={() => handleClick("easy")}>Click me 2</Button>
-          <Button onClick={() => handleClick("hard")}>Click me 3</Button>
+          <Button onClick={() => handleClick("program")}>Click me 3</Button>
         </div>
+        <p className='m-2 p-2 min-h-40 text-wrap border border-stone-400 rounded break-words'>
+          {differences[contentType]}
+        </p>
       </section>
     </main>
   );

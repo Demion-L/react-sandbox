@@ -16,3 +16,9 @@ export const ways = [
     description: "An object with a boolean title",
   },
 ];
+
+export const differences = {
+  way: "LoresfsdfsdfsLoresfs dfsdfsdLoresfsdfsdfsdLoresfsdfsdfsdLoresf sdfsdfsdLoresfsdfsdfsdLoresfsdfsdfs dLoresfsdfsdfsd Loresfsdfsdfsdd",
+  easy: "Dolorsdretrergsdfg",
+  program: "Sit amet sdfgdfgdgdfg",
+};
