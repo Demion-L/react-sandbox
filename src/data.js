@@ -1,19 +1,23 @@
 export const ways = [
   {
     title: "This is the title for object 1",
-    description: "A detailed description of the data in object 1",
+    description:
+      "    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui quia, nesciunt dolores hic amet ducimus officiis placeat consequatur eaque eveniet vel, ratione rerum sunt id sint aut harum, ipsam similique.    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui quia, nesciunt dolores hic amet ducimus officiis placeat consequatur eaque eveniet vel, ratione rerum sunt id sint aut harum, ipsam similique.     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui quia, nesciunt dolores hic amet ducimus officiis placeat consequatur eaque eveniet vel, ratione rerum sunt id sint aut harum, ipsam similique.    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui quia, nesciunt dolores hic amet ducimus officiis placeat consequatur eaque eveniet vel, ratione rerum sunt id sint aut harum, ipsam similique.",
   },
   {
-    title: "Object 2 with a number title",
-    description: "A description for object 2",
+    title: "This is the title for object 2",
+    description:
+      "    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui quia, nesciunt dolores hic amet ducimus officiis placeat consequatur eaque eveniet vel, ratione rerum sunt id sint aut harum, ipsam similique.",
   },
   {
-    title: "List items",
-    description: "An object with a list of items in the title",
+    title: "This is the title for object 3",
+    description:
+      "An object with a list of items in the title.     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui quia, nesciunt dolores hic amet ducimus officiis placeat consequatur eaque eveniet vel, ratione rerum sunt id sint aut harum, ipsam similique.",
   },
   {
-    title: "Boolean Object",
-    description: "An object with a boolean title",
+    title: "This is the title for object 4",
+    description:
+      "An object with a boolean title.     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui quia, nesciunt dolores hic amet ducimus officiis placeat consequatur eaque eveniet vel, ratione rerum sunt id sint aut harum, ipsam similique.",
   },
 ];
 

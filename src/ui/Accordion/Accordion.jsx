@@ -9,7 +9,7 @@ const Accordion = ({ items }) => {
   };
 
   return (
-    <div className='accordion'>
+    <div className='mb-4 backdrop-blur '>
       {items.map((item, index) => (
         <AccordionItem
           key={index}
