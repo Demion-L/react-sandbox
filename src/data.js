@@ -26,3 +26,9 @@ export const differences = {
   easy: "Dolorsdretrergsdfg",
   program: "Sit amet sdfgdfgdgdfg",
 };
+
+export const infoSectionButtonData = [
+  { text: "Click me 1", value: "way" },
+  { text: "Click me 2", value: "easy" },
+  { text: "Click me 3", value: "program" },
+];

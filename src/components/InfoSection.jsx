@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Accordion from "../ui/Accordion/Accordion";
 import Button from "../ui/Button";
 
-import { ways, differences } from "../data";
+import { ways, differences, infoSectionButtonData } from "../data";
 
 const InfoSection = () => {
   const [contentType, setContentType] = useState(null);
@@ -15,13 +15,24 @@ const InfoSection = () => {
       <h1 className='text-xl font-bold w-32 mx-auto my-6'>Hello world</h1>
       <Accordion items={ways} />
       <div className='flex'>
-        <Button onClick={() => handleClick("way")}>Click me 1</Button>
-        <Button onClick={() => handleClick("easy")}>Click me 2</Button>
-        <Button onClick={() => handleClick("program")}>Click me 3</Button>
+        {infoSectionButtonData.map((button) => (
+          <Button
+            key={button.value}
+            isActive={contentType === button.value}
+            onClick={() => handleClick(button.value)}>
+            {button.text}
+          </Button>
+        ))}
       </div>
-      <p className='m-2 p-2 min-h-20 text-wrap border border-stone-400 rounded break-words'>
-        {differences[contentType]}
-      </p>
+      {contentType ? (
+        <p className='m-2 p-2 backdrop-blur selection: min-h-20 text-wrap border border-stone-400 rounded break-words'>
+          {differences[contentType]}
+        </p>
+      ) : (
+        <div className='m-2 p-2 backdrop-blur text-wrap border border-stone-400 rounded break-words'>
+          Press the button!
+        </div>
+      )}
     </section>
   );
 };
